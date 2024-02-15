@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">SelectableItemDemo</string>
+    <string name="error_general">There was an error while loading data!</string>
+    <string name="retry">Retry</string>
 </resources>

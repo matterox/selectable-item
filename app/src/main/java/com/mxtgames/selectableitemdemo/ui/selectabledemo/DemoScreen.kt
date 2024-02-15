@@ -14,8 +14,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.mxtgames.selectableitemdemo.R
 import com.mxtgames.selectableitemdemo.ui.components.IconCotton
 import com.mxtgames.selectableitemdemo.ui.components.IconDelicate
 import com.mxtgames.selectableitemdemo.ui.components.IconFaq
@@ -132,9 +134,9 @@ fun ErrorState(modifier: Modifier = Modifier, message: String, onReloadClicked: 
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            TitleText(text = "There was an error while loading data!")
+            TitleText(text = stringResource(id = R.string.error_general))
             SubtitleText(text = message)
-            TextButton(onClick = onReloadClicked, text = "Retry")
+            TextButton(onClick = onReloadClicked, text = stringResource(id = R.string.retry))
         }
     }
 }
